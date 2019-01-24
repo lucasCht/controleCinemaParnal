@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PosteControle</class>
+ <widget class="QMainWindow" name="PosteControle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PosteControle</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressource.qrc">
+    <normaloff>:/projet/20160101082551!LOGO_Disney_Cinema_2015.png</normaloff>:/projet/20160101082551!LOGO_Disney_Cinema_2015.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="P_acceuil">
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>550</y>
+        <width>1081</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:rgb(150, 150, 150);
+	color:#555;
+	border-radius:15px;
+	width:100px;
+	border:1px solid #ccc;
+font: 24pt &quot;MS Shell Dlg 2&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>RENOUVELER ABONNEMENT</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>110</y>
+        <width>16</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>10</horstretch>
+        <verstretch>10</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineRecherche">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>150</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Recherche....</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listAdherents">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>220</y>
+        <width>381</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineNom">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>210</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Nom</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="linePrenom">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>270</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Prénom</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineAdresse">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>330</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Adresse</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineTelephone">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>390</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Téléphone</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineExpiration">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>450</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Date de fin d'abonnement</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelCine">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>161</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressource.qrc">:/images/leparnal_logo.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelAvatar">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>40</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: solid;
+  border-width: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="P_config">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>40</y>
+        <width>421</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 40pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>CONFIGURATION</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labellogo2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressource.qrc">:/images/leparnal_logo.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineIp">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>200</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>IP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="linePort">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>410</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>PORT DU LECTEUR</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="linelogin">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>270</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>IDENTIFIANT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="password">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>340</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+padding-left:20px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>MOT DE PASSE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_enregistrer">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>490</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(200, 200, 200);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>ENREGISTRER</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

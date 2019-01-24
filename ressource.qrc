@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/leparnal_logo.png</file>
+        <file>../../projet/20160101082551!LOGO_Disney_Cinema_2015.png</file>
+    </qresource>
+</RCC>
